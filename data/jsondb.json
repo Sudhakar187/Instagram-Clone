@@ -1,0 +1,184 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "username": "nature_lover",
+      "profilePic": "/assets/profilepic1.jpeg",
+      "postImage": "/assets/ipost3.jpg",
+      "caption": "Exploring the beauty of the mountains 🏔️✨ #Nature #Travel",
+      "likes": 342,
+      "comments": [
+        {
+          "id": 1,
+          "username": "john_doe",
+          "text": "Wow, amazing shot! 🔥"
+        },
+        {
+          "id": 2,
+          "username": "sophie",
+          "text": "Where is this place? 😍"
+        }
+      ],
+      "timeAgo": "2h"
+    },
+    {
+      "id": "2",
+      "username": "foodie_gram",
+      "profilePic": "/assets/profilepic2.jpeg",
+      "postImage": "/assets/ipost1.jpg",
+      "caption": "Just a casual day out ✌️🙂",
+      "likes": 128,
+      "comments": [
+        {
+          "id": 1,
+          "username": "mark",
+          "text": "Looking cool bro 👌"
+        },
+        {
+          "id": 2,
+          "username": "alex",
+          "text": "Nice click 🔥"
+        }
+      ],
+      "timeAgo": "5h"
+    },
+    {
+      "id": "3",
+      "username": "fitness_freak",
+      "profilePic": "/assets/profilepic3.webp",
+      "postImage": "/assets/ipost2.jpg",
+      "caption": "Chilling and enjoying the moment 😎",
+      "likes": 567,
+      "comments": [
+        {
+          "id": 1,
+          "username": "samuel",
+          "text": "Good vibes only 🙌"
+        },
+        {
+          "id": 2,
+          "username": "ryan",
+          "text": "Great pic bro 🔥"
+        }
+      ],
+      "timeAgo": "1d"
+    }
+  ],
+  "profile": [
+    {
+      "username": "Smiley_face_Sudhakar",
+      "name": "Sudhakar",
+      "dp": "/assets/post1.jpg",
+      "id": "a6ef"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "1",
+      "username": "anime_lover___@naruto",
+      "name": "Vicky",
+      "dp": "/assets/profilepic1.jpeg",
+      "caption": "Followed by smiley_face_deva 2+ more..."
+    },
+    {
+      "id": "2",
+      "username": "fitness_freak",
+      "name": "Aditya",
+      "dp": "/assets/profilepic2.jpeg",
+      "caption": "Followed by crazy_mania 6+ more..."
+    },
+    {
+      "id": "3",
+      "username": "attitude_girl",
+      "name": "Malar",
+      "dp": "/assets/dp1suggest.webp",
+      "caption": "Followed by fitness_freak 1+ more..."
+    },
+    {
+      "id": "4",
+      "username": "hema_cutie",
+      "name": "Hema",
+      "dp": "/assets/dp2suggest.jpeg",
+      "caption": "Followed by _priya_sweetie 12+ more..."
+    },
+    {
+      "id": "5",
+      "username": "dads_little_princess",
+      "name": "Kayal",
+      "dp": "/assets/dp3suggest.jpeg",
+      "caption": "Followed by im_lover_boy 7+ more..."
+    }
+  ],
+  "story": [
+    {
+      "id": "1",
+      "user": {
+        "id": 101,
+        "username": "nature_lover",
+        "profilepic": "/assets/profilepic1.jpeg",
+        "timeago": "1h"
+      },
+      "storypic": "/assets/storygirl4.jpeg"
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": 102,
+        "username": "attitude_boy_karthi",
+        "profilepic": "/assets/profilepic2.jpeg",
+        "timeago": "2h"
+      },
+      "storypic": "/assets/storyboy1.jpeg"
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": 103,
+        "username": "anime_lover___@naruto",
+        "profilepic": "/assets/profilepic3.webp",
+        "timeago": "20m"
+      },
+      "storypic": "/assets/storyboy2.jpg"
+    },
+    {
+      "id": "4",
+      "user": {
+        "id": 104,
+        "username": "smiley_face_sudhakar",
+        "profilepic": "/assets/post1.jpg",
+        "timeago": "7m"
+      },
+      "storypic": "/assets/storyboy3.jpeg"
+    },
+    {
+      "id": "5",
+      "user": {
+        "id": 105,
+        "username": "priya_sweetie",
+        "profilepic": "/assets/dp1suggest.webp",
+        "timeago": "40m"
+      },
+      "storypic": "/assets/storygirl5.jpeg"
+    },
+    {
+      "id": "6",
+      "user": {
+        "id": 106,
+        "username": "hema_cutie",
+        "profilepic": "/assets/dp2suggest.jpeg",
+        "timeago": "1m"
+      },
+      "storypic": "/assets/storygirl6.jpg"
+    }
+  ],
+  "followers": [
+    {
+      "id": "3",
+      "username": "attitude_girl"
+    },
+    {
+      "id": "4",
+      "username": "hema_cutie"
+    }
+  ]
+}
