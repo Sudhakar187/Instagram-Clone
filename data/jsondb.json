@@ -66,7 +66,7 @@
   ],
   "profile": [
     {
-      "username": "Smiley_face_Sudhakar",
+      "username": "Smiley_face_Sudhakarr",
       "name": "Sudhakar",
       "dp": "/assets/post1.jpg",
       "id": "a6ef"
@@ -173,12 +173,13 @@
   ],
   "followers": [
     {
-      "id": "3",
-      "username": "attitude_girl"
+      "id": "1",
+      "username": "anime_lover___@naruto"
     },
     {
-      "id": "4",
-      "username": "hema_cutie"
+      "id": "2",
+      "username": "fitness_freak"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
