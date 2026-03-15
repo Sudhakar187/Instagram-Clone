@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Insta from '../src/assets/instatext.png'
 import { useNavigate, useParams } from 'react-router-dom'
+import API_URL from "./config/api"
 function PersonStory() {
   const { storyid } = useParams();
   const navigate = useNavigate();
   const [onestory, setonestory] = useState(null)
 
   useEffect(() => {
-    fetch(`http://localhost:3000/story/${storyid}`)
+    fetch(`${API_URL}/story/${storyid}`)
       .then((Response) => Response.json())
       .then((data) => setonestory(data))
       .catch(err => console.log(err))
@@ -33,8 +34,8 @@ function PersonStory() {
             </span>
             <div className='viewstory-section'>
               <div className='viewstory-pic'>
-                <img src={`http://localhost:3000${onestory.storypic}`} />
-                <img src={`http://localhost:3000${onestory.user.profilepic}`} />
+                <img src={`${API_URL}${onestory.storypic}`} />
+                <img src={`${API_URL}${onestory.user.profilepic}`} />
                 <p>{onestory.user.username}</p>
                 <p>{onestory.user.timeago}.</p>
                 <div>

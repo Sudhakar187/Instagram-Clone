@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import API_URL from "./config/api"
 function Profile() {
   const [profile, setProfile] = useState(null);
   const [followers, setFollowers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/profile')
+    axios.get(`${API_URL}/profile`)
       .then((res) => {
         setProfile(res.data[0]);
         console.log('Profile Data:', res.data);
@@ -14,7 +14,7 @@ function Profile() {
       .catch((err) => {
         console.error('Error fetching profile:', err);
       });
-    axios.get('http://localhost:3000/followers')
+    axios.get(`${API_URL}/followers`)
       .then((res) => {
         setFollowers(res.data);
         console.log('Followers Data:', res.data);
@@ -26,7 +26,7 @@ function Profile() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:3000/profile/${profile.id}`, profile);
+      await axios.put(`${API_URL}/profile/${profile.id}`, profile);
       alert('Profile updated successfully!');
       console.log('Profile updated successfully');
     } catch (err) {
@@ -43,7 +43,7 @@ function Profile() {
 
   const deletefollowers = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/followers/${id}`)
+      await axios.delete(`${API_URL}/followers/${id}`)
       alert("unfollowed successfully")
       setFollowers(prev => prev.filter(f => f.id !== id));
     }
@@ -61,7 +61,7 @@ function Profile() {
       <div className="insta-profile">
         <div className="profile-header">
           <img
-            src={`http://localhost:3000${profile.dp}`}
+            src={`${API_URL}${profile.dp}`}
             alt="Profile"
             className="profile-avatar"
           />

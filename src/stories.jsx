@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-
+import API_URL from "./config/api"
 function Stories({ mystoryclick }) {
   const [storys, setStories] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/story')
+    fetch(`${API_URL}/story`)
       .then((data) => data.json())
       .then((data) => setStories(data))
       .catch((err) => console.log(err))
@@ -17,7 +17,7 @@ function Stories({ mystoryclick }) {
             {storys.map((item) => (
               <div className='storynumbers' key={item.id} onClick={() => mystoryclick(item.id)}>
                 <div className='image-container'>
-                  <img src={`http://localhost:3000${item.user.profilepic}`} />
+                  <img src={`${API_URL}${item.user.profilepic}`} />
                 </div>
                 <div>{item.user.username}</div>
               </div>

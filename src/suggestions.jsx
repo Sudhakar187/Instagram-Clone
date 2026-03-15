@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
-
+import API_URL from "./config/api"
 
 function Suggestions() {
 
@@ -8,12 +8,12 @@ function Suggestions() {
   const [suggestion, setSuggestion] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/profile')
+    fetch(`${API_URL}/profile`)
       .then((data) => data.json())
       .then((data) => setProfile(data))
       .catch(err => console.log(err))
 
-    fetch('http://localhost:3000/suggestions')
+    fetch(`${API_URL}/suggestions`)
       .then((data) => data.json())
       .then((data) => setSuggestion(data))
       .catch(err => console.log(err))
@@ -21,7 +21,7 @@ function Suggestions() {
 
   const handlefollowers = async (id, username) => {
     try {
-      await axios.post("http://localhost:3000/followers", { "id": id, "username": username });
+      await axios.post(`${API_URL}/followers`, { "id": id, "username": username });
       alert("followed successfully");
     }
     catch (err) {
@@ -33,7 +33,7 @@ function Suggestions() {
       <div className="suggestion-bar">
         {profile && profile.length > 0 ? (
           <div className="profile-bar">
-            <img src={`http://localhost:3000${profile[0].dp}`} alt={profile[0].username} />
+            <img src={`${API_URL}${profile[0].dp}`} alt={profile[0].username} />
             <div className="profile-info">
               <div className="username">{profile[0].username}</div>
               <div className="name text-muted">{profile[0].name}</div>
@@ -55,7 +55,7 @@ function Suggestions() {
               {suggestion.map((item) => (
                 <div className="member" key={item.id}>
                   <div className="member-left">
-                    <img src={`http://localhost:3000${item.dp}`} alt={item.username} />
+                    <img src={`${API_URL}${item.dp}`} alt={item.username} />
                     <div className="member-info">
                       <div className="username">{item.username}</div>
                       <div className="text-muted small">{item.caption}</div>

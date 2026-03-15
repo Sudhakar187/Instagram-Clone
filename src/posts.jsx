@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-
+import API_URL from "./config/api"
 function Posts() {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/posts')
+    fetch(`${API_URL}/posts`)
       .then((Response) => Response.json())
       .then((data => setPosts(data)))
       .catch(err => console.log(err))
@@ -20,7 +20,7 @@ function Posts() {
               <div className="profile-section">
                 <img
                   className="dp"
-                  src={`http://localhost:3000${post.profilePic}`}
+                  src={`${API_URL}${post.profilePic}`}
                   alt={post.username}
                 />
                 <h5 className="username-post">{post.username}</h5>
@@ -33,7 +33,7 @@ function Posts() {
               <div className="post-image">
                 <img
                   className="post"
-                  src={`http://localhost:3000${post.postImage}`}
+                  src={`${API_URL}${post.postImage}`}
                   alt={post.id}
                 />
               </div>
