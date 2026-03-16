@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div className='main-sidebar'>
       <div className='sidebar-menu'>
-        <img src='src/assets/instatext.png' className='logo-text' alt="Instagram" />
+        <img src='/assets/instatext.png' className='logo-text' alt="Instagram" />
         <div onClick={() => { navigate('/') }}><i className="bi bi-house-door-fill"></i> Home </div>
         <div><i className="bi bi-search-heart-fill"></i> Search</div>
         <div><i className="bi bi-compass-fill"></i> Explore</div>
