@@ -1,13 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import logo from "../public/assets/instatext.png"
 
 function Sidebar() {
   const navigate = useNavigate()
   return (
     <div className='main-sidebar'>
       <div className='sidebar-menu'>
-        <img src='/assets/instatext.png' className='logo-text' alt="Instagram" />
+        <img src={logo} className='logo-text' alt="Instagram" />
         <div onClick={() => { navigate('/') }}><i className="bi bi-house-door-fill"></i> Home </div>
         <div><i className="bi bi-search-heart-fill"></i> Search</div>
         <div><i className="bi bi-compass-fill"></i> Explore</div>
