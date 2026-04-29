@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Insta from '../src/assets/instatext.png'
+import Insta from './assets/instatext.png'
 import { useNavigate, useParams } from 'react-router-dom'
 import API_URL from "./config/api"
 function PersonStory() {
