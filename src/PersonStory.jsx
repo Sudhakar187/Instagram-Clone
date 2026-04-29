@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Insta from './assets/instatext.png'
+
 import { useNavigate, useParams } from 'react-router-dom'
 import API_URL from "./config/api"
 function PersonStory() {
@@ -27,7 +27,7 @@ function PersonStory() {
         (
           <div className="viewstory-page">
             <span className='insta-logo-image' onClick={handleclose}>
-              <img src={Insta} alt="Close Story" width={30} style={{ cursor: 'pointer', width: '110px', margin: '14px' }} />
+              <img src="/assets/instatext.png" style={{ cursor: 'pointer', width: '110px', margin: '14px' }} />
             </span>
             <span className='story-closebtn' onClick={handleclose}>
               <i class="bi bi-x-lg"></i>
